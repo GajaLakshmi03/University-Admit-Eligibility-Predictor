@@ -11,7 +11,7 @@
 <li><em>The aim of this project is to help students in shortlisting universities with their profiles.</em></li> 
 <li><em>The predicted output gives them a fair idea about their admission chances in a particular university.</em></li>  
 <li><em>This analysis should also help students who are currently preparing or will be preparing to get a better idea.</em></li> </p>
-<h2> Team ID:</h2><h3>PNT2022TMID18312</h3>
+<h2> Team ID:</h2><h4><em>PNT2022TMID18312<em></h4>
 <h2> Team Members:</h2>
 <li><em>Gaja Lakshmi J(1919102041)</em></li>
 <li><em>Deepika C(1919102031)</em></li>
