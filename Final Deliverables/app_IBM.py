@@ -5,7 +5,7 @@ import pickle
 import requests
 
 # NOTE: you must manually set API_KEY below using information retrieved from your IBM Cloud account.
-API_KEY = "qClbj79GwiDuz-lelTFNtYzrzHPiEj7qzQVnvl0bHirG"
+API_KEY = "<your key>"
 token_response = requests.post('https://iam.cloud.ibm.com/identity/token', data={"apikey":
  API_KEY, "grant_type": 'urn:ibm:params:oauth:grant-type:apikey'})
 mltoken = token_response.json()["access_token"]
@@ -33,7 +33,7 @@ def predict():
 	
 	# NOTE: manually define and pass the array(s) of values to be scored in the next line
 	payload_scoring = {"input_data": [{"field": ['GRE Score', 'TOEFL Score', 'University Rating','SOP','LOR','CGPA','Research'], "values": [GRE_Score,TOEFL_Score,University_Rating,SOP,LOR,CGPA,Research]}]}
-	response_scoring = requests.post('https://us-south.ml.cloud.ibm.com/ml/v4/deployments/80d03055-cefc-404a-8502-e1be5e99c2ae/predictions?version=2022-11-13', json=payload_scoring,
+	response_scoring = requests.post('cloudlocation', json=payload_scoring,
     headers={'Authorization': 'Bearer ' + mltoken})
 	print("Scoring response")
 	print(response_scoring.json())
